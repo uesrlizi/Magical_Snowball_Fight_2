@@ -1,0 +1,90 @@
+# ------------------------------
+# Unreal Engine 5.7 通用忽略规则
+# ------------------------------
+
+# 引擎生成的二进制文件和中间产物
+Binaries/
+Intermediate/
+DerivedDataCache/
+Build/
+Builds/
+Saved/
+*.ilk
+*.pdb
+*.sln.DotSettings.user
+*.vcxproj.user
+*.vcxproj.filters
+*.vcxproj
+
+# 编辑器缓存和日志
+*.log
+*.bak
+*.tmp
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+.DS_Store
+Thumbs.db
+*.pidb
+*.ipch
+*.ncb
+*.opendb
+*.db
+*.idb
+*.aps
+*.res
+*.rc2
+*.manifest
+*.lastbuildstate
+*.tlog
+*.logb
+*.logc
+*.ilk
+*.exp
+*.lib
+*.iobj
+*.ipdb
+
+# UE特定目录
+# 只保留Config目录下的Default和Custom子目录（项目自定义配置），忽略Local（本地编辑器配置）
+Config/Local/
+# 忽略DerivedDataCache的所有内容
+DerivedDataCache/**/*
+# 忽略插件的编译产物（保留插件源码）
+Plugins/*/Binaries/
+Plugins/*/Intermediate/
+# 忽略Shaders的编译产物
+Shaders/Intermediate/
+
+# 项目文件相关（只保留.uproject和.uprojectdirs）
+*.uproject.local
+*.sln
+*.xcodeproj/
+*.xcworkspace/
+*.xcuserdata/
+*.xcsettings
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+
+# 第三方工具/IDE相关
+.vs/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS/Linux 系统文件
+.DS_Store
+.fseventsd/
+.Spotlight-V100/
+.Trashes
+ehthumbs.db
+Desktop.ini
